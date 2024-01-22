@@ -1,7 +1,6 @@
 Imports DevExpress.Diagram.Core
 Imports DevExpress.Utils
 Imports DevExpress.XtraDiagram
-Imports System.ComponentModel
 Imports System.Drawing
 Imports System.Windows.Forms
 
