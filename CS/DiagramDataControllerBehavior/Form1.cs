@@ -1,22 +1,12 @@
 ﻿using DevExpress.Diagram.Core;
-using DevExpress.Office.Utils;
 using DevExpress.Utils;
 using DevExpress.XtraDiagram;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
-namespace DiagramDataControllerBehavior
-{
-    public partial class Form1 : DevExpress.XtraEditors.XtraForm
-    {
-        public Form1()
-        {
+namespace DiagramDataControllerBehavior {
+    public partial class Form1 : DevExpress.XtraEditors.XtraForm {
+        public Form1() {
             InitializeComponent();
             var viewModel = new ViewModel();
 
@@ -62,7 +52,7 @@ namespace DiagramDataControllerBehavior
                 ItemsCanSelect = true,
                 ShowHeader = true
             };
-            DiagramBinding binding= new DiagramBinding("Header", "DepartmentName");
+            DiagramBinding binding = new DiagramBinding("Header", "DepartmentName");
             list.Bindings.Add(binding);
             return list;
         }

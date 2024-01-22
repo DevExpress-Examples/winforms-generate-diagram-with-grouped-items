@@ -1,26 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.ObjectModel;
 
-namespace DiagramDataControllerBehavior
-{
-    public class ViewModel
-    {
-        public ObservableCollection<Department> Departments
-        {
-            get;
-            set;
-        }
-        public ObservableCollection<Relation> Relations
-        {
-            get;
-            set;
-        }
-        public ViewModel()
-        {
+namespace DiagramDataControllerBehavior {
+    public class ViewModel {
+        public ObservableCollection<Department> Departments { get; set; }
+        public ObservableCollection<Relation> Relations { get; set; }
+        public ViewModel() {
             Departments = new ObservableCollection<Department>();
             var dep1 = new Department() { DepartmentID = 1, DepartmentName = "Provision", Sections = new ObservableCollection<Section>() };
             var dep2 = new Department() { DepartmentID = 2, DepartmentName = "Security", Sections = new ObservableCollection<Section>() };
@@ -70,27 +54,24 @@ namespace DiagramDataControllerBehavior
         }
     }
 
-    public class Department
-    {
+    public class Department {
         public int DepartmentID { get; set; }
         public string DepartmentName { get; set; }
         public ObservableCollection<Section> Sections { get; set; }
     }
 
-    public class Section
-    {
+    public class Section {
         public int SectionID { get; set; }
         public string SectionName { get; set; }
         public ObservableCollection<Employee> Employees { get; set; }
     }
 
-    public class Employee
-    {
+    public class Employee {
         public int EmployeeID { get; set; }
         public string EmployeeName { get; set; }
     }
-    public class Relation
-    {
+
+    public class Relation {
         public int FromEmployeeID { get; set; }
         public int ToEmployeeID { get; set; }
     }

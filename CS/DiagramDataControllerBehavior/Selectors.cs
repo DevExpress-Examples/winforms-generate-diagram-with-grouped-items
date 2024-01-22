@@ -1,12 +1,7 @@
 ﻿using DevExpress.Diagram.Core;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace DiagramDataControllerBehavior
-{
+namespace DiagramDataControllerBehavior {
     public class ItemsSelector : IChildrenSelector {
         public IEnumerable<object> GetChildren(object parent) {
             if (parent is Department)
