@@ -10,8 +10,6 @@ This example uses [DiagramDataBindingController](https://docs.devexpress.com/Win
 
 ![image](https://github.com/DevExpress-Examples/winforms-generate-diagram-with-grouped-items/assets/65009440/ec0253b7-d658-4e12-b98d-dfd94e2c06db)
 
-The `DiagramDataBindingController` allows you to generate a diagram with multiple group levels. You can use the [ItemsPath](https://docs.devexpress.com/WindowsForms/DevExpress.XtraDiagram.DiagramDataBindingControllerBase.ItemsPath) property to specify the child collection name. If you use different collections for different group levels, use [ItemsSelector](https://docs.devexpress.com/WindowsForms/DevExpress.XtraDiagram.DiagramDataBindingControllerBase.ItemsSelector). To select keys for parent and child items, use [KeySelector](https://docs.devexpress.com/WindowsForms/DevExpress.XtraDiagram.DiagramDataBindingControllerBase.KeySelector).
-
 The `DiagramDataBindingController` allows you to generate a diagram with multiple group levels. You can use the [ItemsPath](https://docs.devexpress.com/WindowsForms/DevExpress.XtraDiagram.DiagramDataBindingControllerBase.ItemsPath) property to specify child collection name. If you use different collections for different group levels, use [ItemsSelector](https://docs.devexpress.com/WindowsForms/DevExpress.XtraDiagram.DiagramDataBindingControllerBase.ItemsSelector). To select keys for parent and child items, use [KeySelector](https://docs.devexpress.com/WindowsForms/DevExpress.XtraDiagram.DiagramDataBindingControllerBase.KeySelector).
 
 > **Note**
